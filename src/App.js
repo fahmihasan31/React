@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
-import Alert from "./Components/Alert";
 // import element Alert yang telah dibuat
-import Media from "./Components/Media";
+import Alert from "./Components/Alert";
 // Impor elemen Media
+import Media from "./Components/Media";
+//import file component osis
 import FormOsis from "./Components/Osis";
+//import file component pancasila
+import Pancasila from "./Components/Pancasila";
+// import file component button
+import Button from "./Components/Button";
+
 
 
 
@@ -48,7 +54,7 @@ class App extends Component {
             Ini adalah type Danger
           </Alert>
           <Alert type='warning' header='Warning'>
-            Ini adalah type info
+            Ini adalah type warning
           </Alert>
         </div>
         <br />
@@ -66,70 +72,14 @@ class App extends Component {
         <br />
         <hr />
 
+        {/* Studi Kasus */}
         {/* Pancasila */}
-        <header>
-          <div className='title'>PANCASILA</div>
-          <br></br>
-          <div className='head-text'>
-            <div className='text-on-image'>
-              <strong>Sila Pertama</strong>
-              <br></br>
-              Ketuhanan Yang Maha Esa
-            </div>
-            <Media image='sila-1.jpeg'></Media>
-          </div>
-
-          <div className='head-text'>
-            <div className='text-on-image'>
-              <strong>Sila Kedua</strong>
-              <br></br>
-              Kemanusiaan Yang Adil dan Beradap
-            </div>
-            <Media image='sila-2.jpeg'></Media>
-          </div>
-
-          <div className='head-text'>
-            <div className='text-on-image'>
-              <strong>Sila Ketiga</strong>
-              <br></br>
-              Persatuan indonesia
-            </div>
-            <Media image='sila-3.jpeg'></Media>
-          </div>
-
-          <div className='head-text'>
-            <div className='text-on-image'>
-              <strong>Sila Keempat</strong>
-              <br></br>
-              Kerakyatan Yang Dipimpin Oleh Hikmad Kebijaksanaan Dalam Permusyawaratan Perwakilan
-            </div>
-            <Media image='sila-4.png'></Media>
-          </div>
-
-          <div className='head-text'>
-            <div className='text-on-image'>
-              <strong>Sila Kelima</strong>
-              <br></br>
-              Keadilan Sosial Bagi Seluruh Rakyat Indonesia
-            </div>
-            <Media image='sila-5.jpeg'></Media>
-          </div>
-        </header>
-
+        <Pancasila />
         <hr />
         <br />
 
         {/* button warna warni */}
-        <div className="container-button">
-          <div className="button">
-            <button className="button-merah">Merah</button>
-            <button className="button-kuning">Kuning</button>
-            <button className="button-hijau">Hijau</button>
-            <button className="button-putih">Putih</button>
-            <button className="button-hitam">Hitam</button>
-          </div>
-        </div>
-
+        <Button />
         <hr />
         <br />
 
